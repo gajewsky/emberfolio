@@ -1,4 +1,56 @@
-/* Put your CSS here */
-.ember-application {
-    margin: 20px;
+@font-face {
+  font-family: 'portmanteau';
+  src: url('fonts/Portmanteau-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/Portmanteau-Regular.woff') format('woff'), url('fonts/Portmanteau-Regular.ttf') format('truetype'), url('fonts/Portmanteau-Regular.svg#svgFontName') format('svg');
+}
+body {
+  background: url("../images/bg.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  color: #b2b1af;
+  font-family: 'portmanteau', serif;
+}
+/*NAVIGATION*/
+
+.navbar {
+  position: absolute;
+  left: 0px;
+  top: 35px;
+  width: 130px;
+}
+.navbar ul {
+  background: none;
+  margin-left:-40px;
+}
+.navbar ul li {
+  display: block;
+  height: 30px;
+  width: 130px;
+  background: #070707;
+  padding: 2px 5px;
+
+}
+.navbar ul li img{float:left;}
+/*HEADER*/
+
+.header h1 {
+  text-align: center;
+  margin: 35px 30px;
+  letter-spacing: 1.8em;
+  font-size: 36px;
+  color: #a6a4a1;
+  font-family: 'portmanteau';
+}
+/*CONTENT*/
+
+.content {} .box {
+  height: 130px;
+  width: 200px;
+  background: #3b2e18 url(../images/min.png) 0px -5px no-repeat;
+  border-radius: 7px;
+  margin: 10px 10px;
+}
+.filters {} .center-block {
+  float: none !important
 }

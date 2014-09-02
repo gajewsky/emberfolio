@@ -1,0 +1,101 @@
+@import "settings";
+@import "foundation";
+
+// Or selectively include components
+// @import
+//   "foundation/components/accordion",
+//   "foundation/components/alert-boxes",
+//   "foundation/components/block-grid",
+//   "foundation/components/breadcrumbs",
+//   "foundation/components/button-groups",
+//   "foundation/components/buttons",
+//   "foundation/components/clearing",
+//   "foundation/components/dropdown",
+//   "foundation/components/dropdown-buttons",
+//   "foundation/components/flex-video",
+//   "foundation/components/forms",
+//   "foundation/components/grid",
+//   "foundation/components/inline-lists",
+//   "foundation/components/joyride",
+//   "foundation/components/keystrokes",
+//   "foundation/components/labels",
+//   "foundation/components/magellan",
+//   "foundation/components/orbit",
+//   "foundation/components/pagination",
+//   "foundation/components/panels",
+//   "foundation/components/pricing-tables",
+//   "foundation/components/progress-bars",
+//   "foundation/components/reveal",
+//   "foundation/components/side-nav",
+//   "foundation/components/split-buttons",
+//   "foundation/components/sub-nav",
+//   "foundation/components/switch",
+//   "foundation/components/tables",
+//   "foundation/components/tabs",
+//   "foundation/components/thumbs",
+//   "foundation/components/tooltips",
+//   "foundation/components/top-bar",
+//   "foundation/components/type",
+//   "foundation/components/offcanvas",
+//   "foundation/components/visibility";
+
+body{
+	background: url("../images/bg.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color:#b2b1af;
+    font-family: 'Bentham', serif;
+	@font-face {
+		font-family: 'portmanteau';
+		src: url('fonts/Portmanteau-Regular.eot?#iefix') format('embedded-opentype'), 
+		     url('fonts/Portmanteau-Regular.woff') format('woff'), 
+		     url('fonts/Portmanteau-Regular.ttf')  format('truetype'),
+		     url('fonts/Portmanteau-Regular.svg#svgFontName') format('svg');
+	}
+
+	.head{
+		h1{
+			text-align: center;
+			margin:35px 30px;
+	        letter-spacing:1.8em;
+	        font-size: 36px;
+	        color:#a6a4a1;
+	        font-family: 'portmanteau';
+		}
+	}
+	.main-nav{
+		position: absolute;
+		left: 0px;
+		top: 35px;
+		.item{
+			display: block;
+			height: 30px;
+			width: 130px;
+			background: #070707;
+			padding: 2px 5px;
+			margin:2px 0px;
+			img{display: none;}
+			label{float:right;}
+
+		}
+		.hover, .active{
+			width:160px;
+			background: #3b2e18;
+			img{display:inline;}
+		}
+
+	}
+	.content{
+		.box{
+			height: 130px;
+			width: 200px;
+			background: #3b2e18 url(../images/min.png) 0px -5px no-repeat;
+			border-radius: 7px;
+			margin: 10px 10px;
+		}
+	}
+	
+
+}

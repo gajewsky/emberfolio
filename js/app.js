@@ -1,11 +1,16 @@
-App = Ember.Application.create();
+App = Ember.Application.create({
+	LOG_TRANSITIONS: true
+});
 
 App.Router.map(function() {
-  // put your routes here
+  this.route("art");
+	this.route("photo");
+	this.route("design");
+	this.route("about");
 });
 
 App.IndexRoute = Ember.Route.extend({
   model: function() {
-    return ['red', 'yellow', 'blue'];
+    return ['red', '#544527', 'blue'];
   }
 });
