@@ -8,7 +8,7 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: #b2b1af;
+  color:#a6a4a1;
   font-family: 'portmanteau', serif;
 }
 /*NAVIGATION*/
@@ -30,6 +30,11 @@ body {
   background: #070707;
   padding: 2px 5px;
 
+}
+.navbar .active{
+  width:160px;
+  background: #3b2e18;
+  color:#a6a4a1;
 }
 .navbar ul li img{float:left;}
 /*HEADER*/

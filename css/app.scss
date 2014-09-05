@@ -45,12 +45,12 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-    color:#b2b1af;
+    color:#a6a4a1 !important;
     font-family: 'Bentham', serif;
 	@font-face {
 		font-family: 'portmanteau';
-		src: url('fonts/Portmanteau-Regular.eot?#iefix') format('embedded-opentype'), 
-		     url('fonts/Portmanteau-Regular.woff') format('woff'), 
+		src: url('fonts/Portmanteau-Regular.eot?#iefix') format('embedded-opentype'),
+		     url('fonts/Portmanteau-Regular.woff') format('woff'),
 		     url('fonts/Portmanteau-Regular.ttf')  format('truetype'),
 		     url('fonts/Portmanteau-Regular.svg#svgFontName') format('svg');
 	}
@@ -96,6 +96,6 @@ body{
 			margin: 10px 10px;
 		}
 	}
-	
+
 
 }

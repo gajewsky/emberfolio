@@ -20,10 +20,10 @@
         <div class="col-md-2">
           <div class='navbar'>
             <ul class='nav-stacked text-right'>
-              <li>{{#link-to 'art'}}<img src="images/ico-art.png">ART{{/link-to}}</li>
-              <li>{{#link-to 'photo'}}<img src="images/ico-photo.png">PHOTO{{/link-to}}</li>
-              <li>{{#link-to 'design'}}<img src="images/ico-design.png">DESIGN{{/link-to}}</li>
-              <li>{{#link-to 'about'}}<img src="images/ico-about.png">ABOUT{{/link-to}}</li>
+              {{#link-to 'arts' tagName='li'}}<img src="images/ico-art.png">ART{{/link-to}}
+              {{#link-to 'photo' tagName='li'}}<img src="images/ico-photo.png">PHOTO{{/link-to}}
+              {{#link-to 'design' tagName='li'}}<img src="images/ico-design.png">DESIGN{{/link-to}}
+              {{#link-to 'about' tagName='li'}}<img src="images/ico-about.png">ABOUT{{/link-to}}
             </ul>
         </div>
       </div>
@@ -37,19 +37,18 @@
 
   </script>
 
-  <script type="text/x-handlebars" data-template-name="art">
+  <script type="text/x-handlebars" data-template-name="arts">
     <div class="filters col-md-8 center-block">.art</div>
-    <div class="thumbs">
-      <div class="col-md-3"><div class="box"></div></div>
-      <div class="col-md-3"><div class="box"></div></div>
-      <div class="col-md-3"><div class="box"></div></div>
-      <div class="col-md-3"><div class="box"></div></div>
+    {{#each}}
+      <h2>{{title}}</h2>
+      {{#link-to 'art' this class='btn btn-success' tagName='button'}}<img {{bind-attr src='image'}} />{{/link-to}}
+    {{/each}}
 
-      <div class="col-md-3"><div class="box"></div></div>
-      <div class="col-md-3"><div class="box"></div></div>
-      <div class="col-md-3"><div class="box"></div></div>
-      <div class="col-md-3"><div class="box"></div></div>
-    </div>
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="index">
+    <div class="filters col-md-8 center-block">.col-md-6</div>
+    <div class="thumbs">{{adam}}</div>
   </script>
 
   <script type="text/x-handlebars" data-template-name="photo">
