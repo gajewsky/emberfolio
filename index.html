@@ -39,10 +39,19 @@
 
   <script type="text/x-handlebars" data-template-name="arts">
     <div class="filters col-md-8 center-block">.art</div>
-    {{#each}}
+    <ul class="row-fluid block-grid-3">
+      {{#each}}
+        <li>{{#link-to 'art' this class='box' tagName='div'}}<img {{bind-attr src='image'}} /><h2>{{id}}.</h2>{{/link-to}}</li>
+
+      {{/each}}
+    </ul>
+  </script>
+
+  <script type="text/x-handlebars" data-template-name="art">
+
       <h2>{{title}}</h2>
-      {{#link-to 'art' this class='btn btn-success' tagName='button'}}<img {{bind-attr src='image'}} />{{/link-to}}
-    {{/each}}
+      <img {{bind-attr src='image'}} />
+
 
   </script>
 
