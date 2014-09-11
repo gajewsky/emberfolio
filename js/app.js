@@ -1,8 +1,9 @@
 App = Ember.Application.create({
 	LOG_TRANSITIONS: true
 });
-
- /*ROUTES*/
+/*
+* ROUTER
+*/
 App.Router.map(function() {
   this.resource("arts");
 	this.resource('art', { path: '/art/:title' });
@@ -11,36 +12,77 @@ App.Router.map(function() {
 	this.route("about");
 });
 
-/*CONTROLLERS*/
-App.IndexController = Ember.Controller.extend({
-	adam: "hello world"
-});
-
-/*MODELS*/
-App.IndexRoute = Ember.Route.extend({
-  model: function() {
-    return ['red', '#544527', 'blue'];
+/*
+ * ROUTES
+ */
+App.ApplicationRoute = Ember.Route.extend({
+  actions: {
+    showModal: function(name, content) {
+      this.controllerFor(name).set('content', content);
+      this.render(name, {
+        into: 'application',
+        outlet: 'modal'
+      });
+    },
+    removeModal: function() {
+      this.disconnectOutlet({
+        outlet: 'modal',
+        parentView: 'application'
+      });
+    }
   }
 });
+
+App.IndexRoute = Ember.Route.extend({
+  model: function() {
+    return Ember.Object.create({ name: 'My name' });
+  }
+});
+
 
 App.ArtsRoute = Ember.Route.extend({
 	model: function() {
     return App.ART;
   }
 });
+
 App.ArtRoute = Ember.Route.extend({
   model: function(params) {
     return App.ART.findBy('title', params.title);
   }
 });
 
+/*
+ * CONTROLLERS
+ */
 
-/*DATA*/
+
+/*
+ * COMPONENTS
+ */
+App.MyModalComponent = Ember.Component.extend({
+  actions: {
+    ok: function() {
+      this.$('.modal').modal('hide');
+      this.sendAction('ok');
+    }
+  },
+  show: function() {
+    this.$('.modal').modal().on('hidden.bs.modal', function() {
+      this.sendAction('close');
+    }.bind(this));
+  }.on('didInsertElement')
+});
+
+/*
+* DATA
+*/
 App.ART = [
   {	id:1,
     title: 'Adin',
-    description: 'Flint is a hard, sedimentary cryptocrystalline form of the mineral quartz, categorized as a variety of chert.',
-    image: 'images/min.png'
+    description: 'Flint is a hard, sedimentary cryptocrystalline form of the mineral quartz, categorized as a variety of chert.Flint is a hard, sedimentary cryptocrystalline form of the mineral quartz, categorized as a variety of chert.Flint is a hard, sedimentary cryptocrystalline form of the mineral quartz, categorized as a variety of chert.Flint is a hard, sedimentary cryptocrystalline form of the mineral quartz, categorized as a variety of chert.',
+    image: 'images/min.png',
+		photo:'images/obrazek.png'
   },
   { id:2,
 		title: 'Dwa',
@@ -48,22 +90,22 @@ App.ART = [
 		image: 'images/min2.png'
 	},
 	{	id:3,
-		title: 'Adin',
+		title: 'tRI',
 		description: 'Flint is a hard, sedimentary cryptocrystalline form of the mineral quartz, categorized as a variety of chert.',
 		image: 'images/min.png'
 	},
 	{	id:4,
-		title: 'Adin',
+		title: 'Cztery',
 		description: 'Flint is a hard, sedimentary cryptocrystalline form of the mineral quartz, categorized as a variety of chert.',
 		image: 'images/min.png'
 	},
 	{	id:5,
-		title: 'Adin',
+		title: 'Piat',
 		description: 'Flint is a hard, sedimentary cryptocrystalline form of the mineral quartz, categorized as a variety of chert.',
 		image: 'images/min.png'
 	},
 	{	id:6,
-		title: 'Adin',
+		title: 'Szisc',
 		description: 'Flint is a hard, sedimentary cryptocrystalline form of the mineral quartz, categorized as a variety of chert.',
 		image: 'images/min.png'
 	},

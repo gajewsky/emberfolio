@@ -1,22 +1,24 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8">
+    <title>HOSZFOLIO</title>
+    <script src="http://code.jquery.com/jquery-2.1.0.js"></script>
+    <script src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v1.3.0.js"></script>
+    <script src="js/libs/ember-1.7.0.js"></script>
+    <script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
+    <script src="http://jakebixby.com/js/libs/jquery.isotope.min.js"></script>
+    <script src="js/app.js"></script>
 
-<head>
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/bootstrap.css" media="screen">
+    <script src="tests/runner.js"></script>
 
-  <script src="js/libs/jquery-1.10.2.js"></script>
-  <script src="js/libs/handlebars-1.1.2.js"></script>
-  <script src="js/libs/ember-1.7.0.js"></script>
-  <script src="js/app.js"></script>
-  <script src="tests/runner.js"></script>
-</head>
+    <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 
-<body>
-  <script type="text/x-handlebars" data-template-name="application">
-
-    <div class="header">
-      <div class="row">
+  </head>
+  <body>
+    <script type="text/x-handlebars">
+      <div class="header">
         <div class="col-md-2">
           <div class='navbar'>
             <ul class='nav-stacked text-right'>
@@ -25,58 +27,71 @@
               {{#link-to 'design' tagName='li'}}<img src="images/ico-design.png">DESIGN{{/link-to}}
               {{#link-to 'about' tagName='li'}}<img src="images/ico-about.png">ABOUT{{/link-to}}
             </ul>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <a href="#"><h1>HOSZFOLIO</h1></a>
         </div>
       </div>
-        <div class="col-md-8"><a href="#"><h1>HOSZFOLIO</h1></a></div>
+
+      <div class="content col-md-8 center-block">
+        {{outlet}}
+        {{outlet modal}}
+      </div >
+    </script>
+
+    <script type="text/x-handlebars" data-template-name="index">
+
+    </script>
+
+    <script type="text/x-handlebars" data-template-name="arts">
+      <div class="filters col-md-8 center-block"></div>
+        <ul class="row-fluid block-grid-3">
+          {{#each}}
+            <li>{{#link-to 'art' this class='box' tagName='div'}}<img  {{bind-attr src='image'}} /><h2>{{id}}.</h2>{{/link-to}}</li>
+
+          {{/each}}
+        </ul>
+    </script>
+
+    <script type="text/x-handlebars" data-template-name="art">
+
+      {{#my-modal ok='logout' close='removeModal'}}
+        {{#link-to 'arts'}}<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>{{/link-to}}
+        <h2>{{title}}</h2>
+        <img {{bind-attr src='image'}} />
+        <img {{bind-attr src='photo'}} />
+        <p>{{description}}</p>
+        <img {{bind-attr src='photo'}} />
+      {{/my-modal}}
+    </script>
+
+    <script type="text/x-handlebars" data-template-name="photo">
+      <div class="filters col-md-8 center-block">.photo6</div>
+      <div class="thumbs">asfgf</div>
+    </script>
+
+    <script type="text/x-handlebars" data-template-name="design">
+      <div class="filters col-md-8 center-block">.design</div>
+      <div class="thumbs">asfgf</div>
+    </script>
+
+    <script type="text/x-handlebars" data-template-name="about">
+      <div class="filters col-md-8 center-block">.col-md-6</div>
+      <div class="thumbs">asfgf</div>
+    </script>
+
+    <script type="text/x-handlebars" data-template-name="components/my-modal">
+      <div class="modal fade">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              {{yield}}
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
+    </script>
 
-    <div class="content col-md-8 center-block">
-      {{outlet}}
-    </div >
-
-  </script>
-
-  <script type="text/x-handlebars" data-template-name="arts">
-    <div class="filters col-md-8 center-block">.art</div>
-    <ul class="row-fluid block-grid-3">
-      {{#each}}
-        <li>{{#link-to 'art' this class='box' tagName='div'}}<img {{bind-attr src='image'}} /><h2>{{id}}.</h2>{{/link-to}}</li>
-
-      {{/each}}
-    </ul>
-  </script>
-
-  <script type="text/x-handlebars" data-template-name="art">
-
-      <h2>{{title}}</h2>
-      <img {{bind-attr src='image'}} />
-
-
-  </script>
-
-  <script type="text/x-handlebars" data-template-name="index">
-    <div class="filters col-md-8 center-block">.col-md-6</div>
-    <div class="thumbs">{{adam}}</div>
-  </script>
-
-  <script type="text/x-handlebars" data-template-name="photo">
-    <div class="filters col-md-8 center-block">.photo6</div>
-    <div class="thumbs">asfgf</div>
-  </script>
-
-  <script type="text/x-handlebars" data-template-name="design">
-    <div class="filters col-md-8 center-block">.design</div>
-    <div class="thumbs">asfgf</div>
-  </script>
-
-  <script type="text/x-handlebars" data-template-name="about">
-    <div class="filters col-md-8 center-block">.col-md-6</div>
-    <div class="thumbs">asfgf</div>
-  </script>
-
-
-
-</body>
-
+  </body>
 </html>
