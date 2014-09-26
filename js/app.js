@@ -69,7 +69,7 @@ App.DesignsRoute = Ember.Route.extend({
 /*
  * Views
  */
-App.ArtsView = Ember.View.extend({});
+
 
 /*
  * COMPONENTS

@@ -4,11 +4,13 @@
     <meta charset="utf-8">
     <title>HOSZFOLIO</title>
     <script src="http://code.jquery.com/jquery-2.1.0.js"></script>
+    <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
     <script src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v1.3.0.js"></script>
-    <script src="js/libs/ember-1.7.0.js"></script>
+    <script src="js/vendor/ember-1.7.0.js"></script>
     <script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
     <script src="http://jakebixby.com/js/libs/jquery.isotope.min.js"></script>
     <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
     <script src="js/data/data_art.js"></script>
     <script src="js/data/data_photo.js"></script>
     <script src="js/data/data_design.js"></script>
@@ -25,10 +27,10 @@
         <div class="col-md-2">
           <div class='navbar'>
             <ul class='nav-stacked text-right'>
-              {{#link-to 'arts' tagName='li'}}<img src="images/ico-art.png">ART{{/link-to}}
-              {{#link-to 'photos' tagName='li'}}<img src="images/ico-photo.png">PHOTO{{/link-to}}
-              {{#link-to 'designs' tagName='li'}}<img src="images/ico-design.png">DESIGN{{/link-to}}
-              {{#link-to 'about' tagName='li'}}<img src="images/ico-about.png">ABOUT{{/link-to}}
+              {{#link-to 'arts' tagName='li' class='nav_cats'}}<img src="images/ico-art.png">ART{{/link-to}}
+              {{#link-to 'photos' tagName='li' class='nav_cats'}}<img src="images/ico-photo.png">PHOTO{{/link-to}}
+              {{#link-to 'designs' tagName='li' class='nav_cats'}}<img src="images/ico-design.png">DESIGN{{/link-to}}
+              {{#link-to 'about' tagName='li' class='nav_cats'}}<img src="images/ico-about.png">ABOUT{{/link-to}}
             </ul>
           </div>
         </div>
@@ -51,7 +53,7 @@
       <div class="filters col-md-8 center-block"></div>
         <ul class="row-fluid block-grid-3">
           {{#each}}
-            <li>{{#link-to 'art' this class='box' tagName='div'}}<img  {{bind-attr src='image'}} /><h2>{{id}}.</h2>{{/link-to}}</li>
+            <li>{{#link-to 'art' this class='box' tagName='div'}}<img  {{bind-attr src='image'}} /><h3>OPIS</h3><h2>{{id}}.</h2>{{/link-to}}</li>
 
           {{/each}}
         </ul>
@@ -65,6 +67,7 @@
         <img {{bind-attr src='image'}} />
         <img {{bind-attr src='photo'}} />
         <p>{{description}}</p>
+
         <img {{bind-attr src='photo'}} />
       {{/my-modal}}
     </script>
