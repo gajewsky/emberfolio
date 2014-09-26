@@ -35,8 +35,12 @@ body {
   background: #3b2e18;
   color: #a6a4a1;
 }
+.navbar .active img {
+  display:block;
+}
 .navbar ul li img {
   float: left;
+  display: none;
 }
 /*HEADER*/
 
@@ -47,6 +51,9 @@ body {
   font-size: 36px;
   color: #a6a4a1;
   font-family: 'portmanteau';
+}
+.header a{
+  cursor:pointer;
 }
 /*CONTENT*/
 
