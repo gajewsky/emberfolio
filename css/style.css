@@ -60,13 +60,31 @@ body {
 }
 /*CONTENT*/
 
-.content {} .box {
+.content {
+  text-align:center;
+  } .box {
   height: 130px;
   width: 200px;
   background: #3b2e18 0px -5px no-repeat;
   border-radius: 7px;
   margin: 10px 10px;
 }
+.box-container{
+  display:block;
+  max-width:880px;
+  margin-top:30px;
+}
+.filters{
+
+}
+.filters b{font-size:1.2em;}
+.filters button{
+  background:none;
+  border:none;
+  color:#75726a;
+  font-size: 1.2em;
+}
+.filters button.active { color: #fff;}
 .box h2 {
   display:block;
   height:30px;
@@ -105,7 +123,7 @@ ul.block-grid-3 .ember-view{cursor:pointer;}
 ul.block-grid-3 > li:nth-of-type(5n) {
   clear: left;
 }
-.filters {} .center-block {
+.center-block {
   float: none !important
 }
 /*MODAL*/

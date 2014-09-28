@@ -69,6 +69,104 @@ App.DesignsRoute = Ember.Route.extend({
 /*
  * Views
  */
+/*
+* TODO DRY hovers and other actions
+*/
+App.ArtsView = Ember.View.extend({
+	didInsertElement : function(){
+    this._super();
+    Ember.run.scheduleOnce('afterRender', this, function(){
+    	$(".box").hover(function () {
+				$(this).find('img,h2, h3').toggle();
+			});
+
+			$('.box-container').isotope({
+				itemSelector: '.box',
+				layoutMode: 'fitRows'
+			});
+    });
+  },
+  willAnimateIn : function () {
+    this.$().css("opacity", 0);
+  },
+
+  animateIn : function (done) {
+      this.$().fadeTo(300, 1, done);
+  },
+
+  animateOut : function (done) {
+      this.$().fadeTo(300, 0, done);
+  }
+});
+
+App.PhotosView = Ember.View.extend({
+
+	didInsertElement : function(){
+		this._super();
+		Ember.run.scheduleOnce('afterRender', this, function(){
+			$(".box").hover(function () {
+				$(this).find('img,h2, h3').toggle();
+			});
+
+			$('.box-container').isotope({
+				itemSelector: '.box',
+				layoutMode: 'fitRows'
+			});
+
+			$('.filters').on( 'click', 'button', function() {
+				var filterValue = $(this).attr('data-filter');
+				$('.box-container').isotope({ filter: filterValue });
+				$(this).parent().find('button.active').removeClass('active');
+      	$(this).addClass('active');
+			});
+		});
+	},
+	willAnimateIn : function () {
+		this.$().css("opacity", 0);
+	},
+
+	animateIn : function (done) {
+			this.$().fadeTo(300, 1, done);
+	},
+
+	animateOut : function (done) {
+			this.$().fadeTo(300, 0, done);
+	}
+});
+
+App.DesignsView = Ember.View.extend({
+	didInsertElement : function(){
+		this._super();
+		Ember.run.scheduleOnce('afterRender', this, function(){
+			$(".box").hover(function () {
+				$(this).find('img,h2, h3').toggle();
+			});
+
+			$('.box-container').isotope({
+				itemSelector: '.box',
+				layoutMode: 'fitRows'
+			});
+
+			$('.filters').on( 'click', 'button', function() {
+				var filterValue = $(this).attr('data-filter');
+				$('.box-container').isotope({ filter: filterValue });
+				$(this).parent().find('button.active').removeClass('active');
+				$(this).addClass('active');
+			});
+		});
+	},
+	willAnimateIn : function () {
+		this.$().css("opacity", 0);
+	},
+
+	animateIn : function (done) {
+			this.$().fadeTo(300, 1, done);
+	},
+
+	animateOut : function (done) {
+			this.$().fadeTo(300, 0, done);
+	}
+});
 
 
 /*

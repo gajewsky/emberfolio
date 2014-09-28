@@ -7,8 +7,9 @@
     <script src="http://code.jquery.com/ui/1.11.1/jquery-ui.js"></script>
     <script src="http://builds.handlebarsjs.com.s3.amazonaws.com/handlebars-v1.3.0.js"></script>
     <script src="js/vendor/ember-1.7.0.js"></script>
+    <script src="js/vendor/ember-animate.js"></script>
     <script src="http://getbootstrap.com/dist/js/bootstrap.js"></script>
-    <script src="http://jakebixby.com/js/libs/jquery.isotope.min.js"></script>
+    <script src="js/vendor/isotope.pkgd.min.js"></script>
     <script src="js/app.js"></script>
     <script src="js/script.js"></script>
     <script src="js/data/data_art.js"></script>
@@ -19,6 +20,8 @@
 
     <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/vendor/isotope.css">
+
 
   </head>
   <body>
@@ -27,7 +30,7 @@
         <div class="col-md-2">
           <div class='navbar'>
             <ul class='nav-stacked text-right'>
-              {{#link-to 'arts' tagName='li' class='nav_cats'}}<img src="images/ico-art.png">ART{{/link-to}}
+              {{#link-to 'arts' tagName='li' class='nav_cats'}}<img src="images/ico-art.png">ILLUSTRATION{{/link-to}}
               {{#link-to 'photos' tagName='li' class='nav_cats'}}<img src="images/ico-photo.png">PHOTO{{/link-to}}
               {{#link-to 'designs' tagName='li' class='nav_cats'}}<img src="images/ico-design.png">DESIGN{{/link-to}}
               {{#link-to 'about' tagName='li' class='nav_cats'}}<img src="images/ico-about.png">ABOUT{{/link-to}}
@@ -35,12 +38,12 @@
           </div>
         </div>
         <div class="col-md-8">
-          <a href="#"><h1>HOSZFOLIO</h1></a>
+          {{#link-to 'index' tagName='h1' class='nav_cats'}}HOSZFOLIO{{/link-to}}
         </div>
       </div>
 
       <div class="content col-md-8 center-block">
-        {{outlet}}
+        {{outlet }}
         {{outlet modal}}
       </div >
     </script>
@@ -51,9 +54,9 @@
 
     <script type="text/x-handlebars" data-template-name="arts">
       <div class="filters col-md-8 center-block"></div>
-        <ul class="row-fluid block-grid-3">
+        <ul class="row-fluid block-grid-3 box-container center-block">
           {{#each}}
-            <li>{{#link-to 'art' this class='box' tagName='div'}}<img  {{bind-attr src='image'}} /><h3>OPIS</h3><h2>{{id}}.</h2>{{/link-to}}</li>
+            <li>{{#link-to 'art' this class='box' tagName='div'}}<img  {{bind-attr src='thumbnail'}} /><h3>OPIS</h3><h2>{{id}}.</h2>{{/link-to}}</li>
 
           {{/each}}
         </ul>
@@ -64,7 +67,7 @@
       {{#my-modal ok='logout' close='removeModal'}}
         {{#link-to 'arts'}}<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>{{/link-to}}
         <h2>{{title}}</h2>
-        <img {{bind-attr src='image'}} />
+        <img {{bind-attr src='thumbnail'}} />
         <img {{bind-attr src='photo'}} />
         <p>{{description}}</p>
 
@@ -73,19 +76,24 @@
     </script>
 
     <script type="text/x-handlebars" data-template-name="photos">
-      <div class="filters col-md-8 center-block"></div>
-          <ul class="row-fluid block-grid-3">
+      <div class="filters col-md-8 center-block">
+        <button class="active "data-filter="*">ALL</button><b>+</b>
+        <button data-filter=".portrait">PORTRAIT</button><b>+</b>
+        <button data-filter=".nature">NATURE</button><b>+</b>
+        <button data-filter=".wedding">WEDDING</button>
+      </div>
+          <ul class="row-fluid block-grid-3 box-container center-block">
             {{#each}}
-              <li>{{#link-to 'photo' this class='box' tagName='div'}}<img  {{bind-attr src='image'}} /><h2>{{id}}.</h2>{{/link-to}}</li>
-
+              <li>{{#link-to 'photo' this class='box' tagName='div' classNameBindings="category"}}<img {{bind-attr src='thumbnail'}}/><h2>{{id}}.</h2>{{/link-to}}</li>
             {{/each}}
           </ul>
     </script>
+
     <script type="text/x-handlebars" data-template-name="photo">
         {{#my-modal ok='logout' close='removeModal'}}
           {{#link-to 'photos'}}<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>{{/link-to}}
           <h2>{{title}}</h2>
-          <img {{bind-attr src='image'}} />
+          <img {{bind-attr src='thumbnail'}} />
           <img {{bind-attr src='photo'}} />
           <p>{{description}}</p>
           <img {{bind-attr src='photo'}} />
@@ -93,11 +101,15 @@
     </script>
 
     <script type="text/x-handlebars" data-template-name="designs">
-      <div class="filters col-md-8 center-block"></div>
-          <ul class="row-fluid block-grid-3">
+      <div class="filters col-md-8 center-block">
+        <button class="active" data-filter="*">ALL</button><b>+</b>
+        <button data-filter=".web-mobile">WEB/MOBILE</button><b>+</b>
+        <button data-filter=".id-schemes">ID/SCHEMES</button><b>+</b>
+        <button data-filter=".poster-book">POSTER/BOOK</button>
+      </div>
+          <ul class="row-fluid block-grid-3 box-container center-block">
             {{#each}}
-              <li>{{#link-to 'design' this class='box' tagName='div'}}<img  {{bind-attr src='image'}} /><h2>{{id}}.</h2>{{/link-to}}</li>
-
+              <li>{{#link-to 'design' this class='box' tagName='div' classNameBindings="category"}}<img {{bind-attr src='thumbnail'}}/><h2>{{id}}.</h2>{{/link-to}}</li>
             {{/each}}
           </ul>
     </script>
@@ -106,7 +118,7 @@
         {{#my-modal ok='logout' close='removeModal'}}
           {{#link-to 'designs'}}<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>{{/link-to}}
           <h2>{{title}}</h2>
-          <img {{bind-attr src='image'}} />
+          <img {{bind-attr src='thumbnail'}} />
           <img {{bind-attr src='photo'}} />
           <p>{{description}}</p>
           <img {{bind-attr src='photo'}} />
