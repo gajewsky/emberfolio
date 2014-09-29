@@ -1,0 +1,114 @@
+﻿<div id="ii1" class="lightbox ">
+       <h2>Illustration II</h2>
+	<p> Dialogue between life and death. </p>
+        <img src="images/content/ilu/ii01a.png" />
+	 <img src="images/content/ilu/ii01b.png" />
+	 <img src="images/content/ilu/ii01c.png" />
+	 <img src="images/content/ilu/ii01d.png" />
+	 <img src="images/content/ilu/IMG_5611.png" />
+	 <img src="images/content/ilu/IMG_5592.png" />
+	 <img src="images/content/ilu/IMG_5612.png" />
+	 <img src="images/content/ilu/IMG_5615.png" />
+	 <img src="images/content/ilu/IMG_5617.png" />
+	 <img src="images/content/ilu/IMG_5614.png" />
+	 <img src="images/content/ilu/IMG_5644.png" />
+   </div>
+
+
+
+<div id="ii2" class="lightbox ">
+       <h2>Illustration I</h2>
+	<p>For poems by Krzysztof Kornakiewicz</p>
+        <img src="images/content/ilu/ii02a.png" />
+	<p>pod ciężarem zgięty<br/><br/>
+nie ma w tym twojej winy wojny głód ludzie <br/>
+i niekochanie nadwrażliwi<br/>
+chłopcy dziewczęta jak brak papierosów<br/>
+dziewczęta jak brak miejsc siedzących<br/>
+nadwrażliwi chłopcy wychodzą z domów po nic dotykają przypadkowych<br/>
+przechodniów potykają się o wystające nierówno ułożone płytki<br/>
+chodnikowe<br/>
+<br/>
+nie ma w tym twojej winy że są ludzie i rzeczy<br/>
+spóźnienia pociągów brak środków na koncie<br/>
+pochmurne twarze dni spadające ogromne krople<br/>
+z dachów kamienic<br/>
+państwa i narody problemy zdrowotne<br/>
+pełne autobusy<br/>
+kolejki<br/>
+<br/>
+naprawdę nie musisz się obwiniać o twarze skrzywdzonych<br/>
+przez ciebie ludzi gdyby nie ty przyszliby inni<br/>
+zrobiliby to<br/>
+nawet porządniej bez znieczulenia i słów<br/>
+uspokajania kajania <br/>
+kopnęliby nawet tego czarnego psa<br/>
+którego ręką jak najmniej uniesioną próbujesz przegonić<br/>
+zahaczając o uszy <br/>
+głaszcząc na pożegnanie<br/>
+<br/>
+nie ma w tym żadnej twojej winy że ktoś zaszedł w ciąże<br/>
+ma trójkę dzieci brak szansy na pracę<br/>
+że kryzys i krach<br/>
+że pogrzeb i piach<br/>
+że mury i bomby<br/>
+że palach terroryści samobójcy włóczędzy menele bezdomni i biedni<br/>
+<br/>
+ty skrzywdziłeś jedynie o kilka osób za dużo<br/>
+</p>
+
+	<img src="images/content/ilu/ii02b.png" />
+	<p>For poems by Krzysztof Kornakiewicz</p>
+	<img src="images/content/ilu/ii02c.png" />
+	<p>o owocach. <br/><br/>
+to nie tak, że sznurowadła przejdą w liny <br/>
+pętle w mętliki, więzy i pęta. najpierw spadną <br/>
+gruszki - nieostrożni może my. obruszyć się twardo <br/>
+wbitym w grunt. (z czereśni można zrobić kolczyki.)<br/>
+to nie tak, że ulec to "kraść" ulęgałki.<br/>
+<br/>
+to przejrzewanie przez palce, to straszne filmy<br/>
+i śmiech, że po wszystkim. chronić pustkę czy <br/>
+chroniczna pustka. to salwa śmiechu, że jednak,<br/>
+że jednak nie. że świat polifonię na jedną nutę nuci. że<br/>
+<br/>
+na jedno wychodzi, że na jedno kopyto cały ten bieg.<br/>
+że monochromem, aż jebie po oczach.</p>
+
+	<img src="images/content/ilu/ii02d.png" />
+	<p>siła i duszność.<br/><br/>
+wiem,<br/>
+warto by ci dać choć trochę niezużytych słów -<br/>
+by ich echa płonęły jak owoce płonki.<br/>
+<br/>
+lecz nie czekałem,<br/>
+aż będzie dość siły by przełamać duchotę. ostrzyłem<br/>
+sztućce, rwałem moskitery, marnowałem bletki. wszystkie <br/>
+<br/>
+te męskie zajęcia - sznyt nieszczęśnika<br/>
+szyłem z pietyzmem. wdrapać się by spaść,<br/>
+spadać i spać, spadać i spaść.<br/>
+<br/>
+-wyglądasz jakby usiadło na tobie stado kruczych królów.<br/>
+smutne to wybielanie.
+</p>
+
+	<img src="images/content/ilu/ii02e.png" />
+	<p>mówię do rzeczy<br/><br/>
+bez świadomości. wyzuty z rytuału jak czynny do odwołania.<br/>
+chłodne powietrze - to zima, idzie zima. pejzaż, bardziej<br/>
+landszaft i miejsce, może miska, do spluwania. landszaft<br/>
+w pokoju, z kroplą niepokoju; landszaft pustych ścian:<br/>
+<br/>
+w kącie spluwaczka, paczka prezerwatyw, trochę zwietrzałej<br/>
+wódki, żarówka na czarnym sznurku, słowem wszystko. czasami<br/>
+w kącie stoisz ty. (jesteś popierdolony! nikt, poza mną, nigdy<br/>
+tam nie stał!). za karę zbliżam się do ciebie. dotykam<br/>
+ścian, macam, badam z przejęciem. kąt staje się prosty.<br/>
+<br/>
+podłoga jest usyfiona popiołem, woskiem, tobą. wszystko<br/>
+jest usyfionę tobą. nigdy cię tu nie było. deszczowy<br/>
+dzień na stradomskiej. nigdy cię tu nie było. słoneczny<br/>
+dzień na stradomskiej.
+</p>
+   </div>

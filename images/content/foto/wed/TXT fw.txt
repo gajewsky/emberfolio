@@ -1,0 +1,62 @@
+<div id="fw1" class="lightbox ">
+       <h2>Monika + Maks</h2>
+       <p>Photos taken on location. We went to a beautiful botanic garden in Cracow.</p>
+       <img src="images/content/foto/wed/fw01a.png" />
+       <img src="images/content/foto/wed/fw01b.png" />
+       <img src="images/content/foto/wed/fw01c.png" />
+       <img src="images/content/foto/wed/fw01d.png" />
+       <img src="images/content/foto/wed/fw01e.png" />
+   </div>
+
+
+
+
+<div id="fw2" class="lightbox ">
+       <h2>Monika + Maks</h2>
+       <p>Photos taken during wedding in Nowy Sacz.</p>
+       <img src="images/content/foto/wed/fw02a.png" />
+       <img src="images/content/foto/wed/fw02b.png" />
+       <img src="images/content/foto/wed/fw02c.png" />
+       <img src="images/content/foto/wed/fw02d.png" />
+       <img src="images/content/foto/wed/fw02e.png" />
+       <img src="images/content/foto/wed/fw02f.png" />
+       <img src="images/content/foto/wed/fw02g.png" />
+       <img src="images/content/foto/wed/fw02h.png" />
+       <img src="images/content/foto/wed/fw02i.png" />
+       <img src="images/content/foto/wed/fw02j.png" />
+       <img src="images/content/foto/wed/fw02k.png" />
+   </div>
+
+
+
+
+
+<div id="fw3" class="lightbox ">
+       <h2>Natalia + £ukasz</h2>
+       <p>Photos taken on location in Stary Sacz.</p>
+       <img src="images/content/foto/wed/fw04a.png" />
+       <img src="images/content/foto/wed/fw04b.png" />
+       <img src="images/content/foto/wed/fw04c.png" />
+       <img src="images/content/foto/wed/fw04d.png" />
+   </div>
+
+
+
+
+<div id="fw4" class="lightbox ">
+       <h2>Natalia + £ukasz</h2>
+       <p>Photos taken during wedding in Strzyganiec/Nawojowa.</p>
+       <img src="images/content/foto/wed/fw03a.png" />
+       <img src="images/content/foto/wed/fw03b.png" />
+       <img src="images/content/foto/wed/fw03c.png" />
+       <img src="images/content/foto/wed/fw03d.png" />
+       <img src="images/content/foto/wed/fw03e.png" />
+       <img src="images/content/foto/wed/fw03f.png" />
+       <img src="images/content/foto/wed/fw03g.png" />
+       <img src="images/content/foto/wed/fw03h.png" />
+       <img src="images/content/foto/wed/fw03i.png" />
+       <img src="images/content/foto/wed/fw03j.png" />
+       <img src="images/content/foto/wed/fw03k.png" />
+       <img src="images/content/foto/wed/fw03l.png" />
+       <img src="images/content/foto/wed/fw03m.png" />
+   </div>

@@ -87,6 +87,7 @@ body {
 .filters button.active { color: #fff;}
 .box h2 {
   display:block;
+  padding-right:5px;
   height:30px;
   width:30px;
   position: relative;
@@ -95,6 +96,7 @@ body {
 }
 .box h3{
   display:none;
+  font-size:1.2em;
 }
 .content .hover{
   background:yellow;

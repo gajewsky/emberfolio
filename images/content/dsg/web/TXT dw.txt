@@ -1,0 +1,90 @@
+Kolejnoœæ (w folderze oznaczone jako):
+
+dw1 Lankars (1) 
+dw2 Tylicz(2) 
+dw3 Coffee (5)
+dw4 Win8 (6)
+dw5 Apkandroid (7,9)
+dw6 Meower, mieszkanie (praktyki)(3,8)
+
+
+
+
+<div id="dw1" class="lightbox ">
+       <h2>Lan-kars Shoes</h2>
+       <p>Website  design for a shoes/boots manufacturer. The goal was to design a simple but elegant RWD with a catalogue. Background photography is also provided by me and the boots are Lan-kars. </p>
+       <img src="images/content/dsg/web/dw01.png" />
+	<p> Landing page with simple menu and search bar. </p>
+	 <img src="images/content/dsg/web/dw01a.png" />
+	<p> The catalogue page, single product and the mobile view. </p>
+   </div>
+
+
+
+
+
+<div id="dw2" class="lightbox ">
+       <h2>Tylicz ski</h2>
+       <p>Website design for ski resort. My intention was to make a simple and clear visually website, where will be a lot of information on the homepage. I wanted to keep it in winter mood, but the warm and cosy kind.</p>
+       <img src="images/content/dsg/web/dw02.png" />
+	 <img src="images/content/dsg/web/dw02a.png" />
+   </div>
+
+
+
+
+
+<div id="dw3" class="lightbox ">
+       <h2>Coffee kind</h2>
+       <p>Website design for an application which shows most of the coffee kinds, what are the ingredients and proportions. You can see it <a href="http://hoszfolio.com/coffee">HERE</a>.</p>
+       <img src="images/content/dsg/web/dw05.png" />
+       <img src="images/content/dsg/web/dw05a.png" />
+       <img src="images/content/dsg/web/dw05b.png" />
+       <img src="images/content/dsg/web/dw05c.png" />
+   </div>
+
+
+
+
+<div id="dw4" class="lightbox ">
+       <h2>Windows 8 applications</h2>
+       <p>Design of an application "Virtual wardrobe" which allows you to take photos of your clothes, compose them in sets, tag them with occassions/seasons and schedule days to wear them.</p>
+       <img src="images/content/dsg/web/dw06.png" />
+       <img src="images/content/dsg/web/dw06a.png" />
+       <img src="images/content/dsg/web/dw06b.png" />
+       <img src="images/content/dsg/web/dw06c.png" />
+       <img src="images/content/dsg/web/dw06d.png" />
+       <img src="images/content/dsg/web/dw06e.png" />	
+</div>
+
+
+
+
+
+<div id="dw5" class="lightbox ">
+       <h2>Android applications</h2>
+       <p>Taxi application which allows you to call a taxi through internet connection or if you are a taxi driver - to choose an order.</p>
+       <img src="images/content/dsg/web/dw09a.png" />
+	<p> Gym schedule application, where you can create a calendar with sport classes you want to attend from these which are available from picked gyms.
+       <img src="images/content/dsg/web/dw07.png" />
+       <img src="images/content/dsg/web/dw07a.png" />	
+</div>
+
+
+
+
+
+
+<div id="dw6" class="lightbox ">
+       <h2>Practice commisions</h2>
+       <p>Website application similar to twitter. I invented the name analogical to twitter - meower and made a logo.</p>
+       <img src="images/content/dsg/web/dw08.png" />
+       <img src="images/content/dsg/web/dw08a.png" />
+	<p>Theme for a blog-type website with buliding theme articles (from foundations to interior design).
+       <img src="images/content/dsg/web/dw03.png" />
+       <img src="images/content/dsg/web/dw03a.png" />
+       <img src="images/content/dsg/web/dw03b.png" />	
+	<p>Another blog-type website and its logotype, this time only about interior design. 
+       <img src="images/content/dsg/web/dw03d.png" />
+       <img src="images/content/dsg/web/dw03c.png" />
+</div>

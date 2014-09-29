@@ -1,0 +1,27 @@
+<div id="dp1" class="lightbox ">
+       <h2>Plakaty</h2>
+        <img src="images/content/dsg/pos/dp01.png" />
+	<p> Poster for a theatre contest. </p>
+	 <img src="images/content/dsg/pos/dp01b.png" />
+	<p> Poster for a regional lace fashion show. </p>
+	 <img src="images/content/dsg/pos/dp01c.png" />
+	 <p> The invitation for the lace fashion show. </p>
+   </div>
+
+
+
+
+
+
+<div id="dp2" class="lightbox ">
+       <h2Children book covers</h2>
+       <p>Set of children book covers designed as a BA degree student of graphic design.</p>
+       <img src="images/content/dsg/pos/dp02a.png" />
+	<p>Polish fairy tales series under an artificial "Basnie Polskie" label. Every cover has a symbolic image of the story.
+	 <img src="images/content/dsg/pos/dp02b.png" />
+	 <img src="images/content/dsg/pos/dp02c.png" />
+	 <p> Two covers of children's rhymes written by Julian Tuwim, "Gravy train" and "Bird radio" </p>
+   </div>
+
+
+

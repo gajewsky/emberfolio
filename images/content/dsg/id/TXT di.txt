@@ -1,0 +1,54 @@
+<div id="di1" class="lightbox ">
+       <h2>Graphic Design Gallery</h2>
+       <p>Total branding for an artificial gallery of art with emphasis on the poster and placard. </p>
+       <img src="images/content/dsg/id/di01.png" />
+	<p> Logotype, headed paper and business card. </p>
+	 <img src="images/content/dsg/id/di01b.png" />
+	<p> The poster </p>
+	 <img src="images/content/dsg/id/di01c.png" />
+	 <p> The placard </p>
+   </div>
+
+
+
+
+
+
+<div id="di2" class="lightbox ">
+       <h2>Metalnews.pl</h2>
+       <p>Logotype design for metalnews.pl, a polish website with current affairs of metal music. The logotype is used in the header of the website, on partners and self promotional objects like CD cover stickers, posters, T-shirts.</p>
+       <img src="images/content/dsg/id/di02a.png" />
+	 <img src="images/content/dsg/id/di02b.png" />
+	 <img src="images/content/dsg/id/di01c.png" />
+	 <p> The logo was hand drawn with ink pen and converted to a vector image. </p>
+   </div>
+
+
+
+
+
+
+<div id="di3" class="lightbox ">
+       <h2>Smartbots media</h2>
+       <p>Three of logotype submissions for a company which used to create broker's and statistics software. It doesn't exist anymore.</p>
+       <img src="images/content/dsg/id/di03a.png" />
+       <img src="images/content/dsg/id/di03b.png" />
+       <img src="images/content/dsg/id/di03c.png" />
+
+   </div>
+
+
+
+
+<!-- nowy przeniesiony z dsg/id/pos miniatura di04min.png -->
+
+<div id="di3" class="lightbox ">
+       <h2>Congress of aesthetics</h2>
+       <p>Branding elements (without the logotype) for a 19th International Congress of Aesthetics contest. The leitmotiv is "Aesthetics in action" and it should have been reflected in the design of the conference lineup, notepad, book of abstracts, poster, placard and bag. </p>
+       <img src="images/content/dsg/id/di04a.png" />
+	<p> My design contains the colors of logotype and shows a dancing woman with a slightly folk feel, which is a conotation to keywords like motion, aesthetic (woman's beauty) and Cracow's tradition. </p>
+       <img src="images/content/dsg/id/di04b.png" />
+	<p> Alternative design which is a paintbrush mark with a painting inside. This is W³adys³aw Podkowiñski's painting called "Extasy" (similar symbols of motion and woman's aesthetic) and the work is in Cracow.</p>
+
+   </div>
+

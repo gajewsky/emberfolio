@@ -1,0 +1,34 @@
+<div id="fw1" class="lightbox ">
+       <h2>Portrait I</h2>
+       <img src="images/content/foto/portr/fp01a.png" />
+       <img src="images/content/foto/portr/fp01c.png" />
+       <img src="images/content/foto/portr/fp01e.png" />
+       <img src="images/content/foto/portr/fp01f.png" />
+   </div>
+
+<div id="fw2" class="lightbox ">
+       <h2>Portrait II</h2>
+       <img src="images/content/foto/portr/fp02a.png" />
+       <img src="images/content/foto/portr/fp02b.png" />
+       <img src="images/content/foto/portr/fp02c.png" />
+       <img src="images/content/foto/portr/fp02d.png" />
+   </div>
+
+<div id="fw3" class="lightbox ">
+       <h2>Portrait III</h2>
+       <img src="images/content/foto/portr/fp03a.png" />
+       <img src="images/content/foto/portr/fp03b.png" />
+       <img src="images/content/foto/portr/fp03c.png" />
+       <img src="images/content/foto/portr/fp03cc.png" />
+       <img src="images/content/foto/portr/fp03d.png" />
+       <img src="images/content/foto/portr/fp03e.png" />
+   </div>
+
+<div id="fw4" class="lightbox ">
+       <h2>Portrait IV</h2>
+       <img src="images/content/foto/portr/fp04b.png" />
+       <img src="images/content/foto/portr/fp04c.png" />
+       <img src="images/content/foto/portr/fp04d.png" />
+       <img src="images/content/foto/portr/fp04e.png" />
+       <img src="images/content/foto/portr/fp04f.png" />
+   </div>

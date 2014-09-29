@@ -77,7 +77,7 @@ App.ArtsView = Ember.View.extend({
     this._super();
     Ember.run.scheduleOnce('afterRender', this, function(){
     	$(".box").hover(function () {
-				$(this).find('img,h2, h3').toggle();
+				$(this).find('img,h2, h3').fadeToggle(200,"easeOutSine");
 			});
 
 			$('.box-container').isotope({
@@ -105,7 +105,7 @@ App.PhotosView = Ember.View.extend({
 		this._super();
 		Ember.run.scheduleOnce('afterRender', this, function(){
 			$(".box").hover(function () {
-				$(this).find('img,h2, h3').toggle();
+				$(this).find('img,h2, h3').fadeToggle(200,"easeOutSine");
 			});
 
 			$('.box-container').isotope({
@@ -139,7 +139,7 @@ App.DesignsView = Ember.View.extend({
 		this._super();
 		Ember.run.scheduleOnce('afterRender', this, function(){
 			$(".box").hover(function () {
-				$(this).find('img,h2, h3').toggle();
+				$(this).find('img,h2, h3').fadeToggle(200,"easeOutSine");
 			});
 
 			$('.box-container').isotope({
@@ -168,6 +168,14 @@ App.DesignsView = Ember.View.extend({
 	}
 });
 
+App.PDFView = Ember.View.extend({
+  tagName: 'iframe',
+  attributeBindings: ['src', 'width', 'height', 'frameborder'],
+  src: 'klaudiamigaczresume.pdf',
+  width: 800,
+  height: 600,
+  frameborder: 0
+});
 
 /*
  * COMPONENTS

@@ -21,6 +21,8 @@
     <link href="http://getbootstrap.com/dist/css/bootstrap.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/vendor/isotope.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
 
 
   </head>
@@ -30,7 +32,7 @@
         <div class="col-md-2">
           <div class='navbar'>
             <ul class='nav-stacked text-right'>
-              {{#link-to 'arts' tagName='li' class='nav_cats'}}<img src="images/ico-art.png">ILLUSTRATION{{/link-to}}
+              {{#link-to 'arts' tagName='li' class='nav_cats'}}<img src="images/ico-art.png">ART{{/link-to}}
               {{#link-to 'photos' tagName='li' class='nav_cats'}}<img src="images/ico-photo.png">PHOTO{{/link-to}}
               {{#link-to 'designs' tagName='li' class='nav_cats'}}<img src="images/ico-design.png">DESIGN{{/link-to}}
               {{#link-to 'about' tagName='li' class='nav_cats'}}<img src="images/ico-about.png">ABOUT{{/link-to}}
@@ -56,7 +58,7 @@
       <div class="filters col-md-8 center-block"></div>
         <ul class="row-fluid block-grid-3 box-container center-block">
           {{#each}}
-            <li>{{#link-to 'art' this class='box' tagName='div'}}<img  {{bind-attr src='thumbnail'}} /><h3>OPIS</h3><h2>{{id}}.</h2>{{/link-to}}</li>
+            <li>{{#link-to 'art' this class='box' tagName='div'}}<img  {{bind-attr src='thumbnail'}} /><h3>{{title}}</h3><h2>{{id}}.</h2>{{/link-to}}</li>
 
           {{/each}}
         </ul>
@@ -79,12 +81,11 @@
       <div class="filters col-md-8 center-block">
         <button class="active "data-filter="*">ALL</button><b>+</b>
         <button data-filter=".portrait">PORTRAIT</button><b>+</b>
-        <button data-filter=".nature">NATURE</button><b>+</b>
         <button data-filter=".wedding">WEDDING</button>
       </div>
           <ul class="row-fluid block-grid-3 box-container center-block">
             {{#each}}
-              <li>{{#link-to 'photo' this class='box' tagName='div' classNameBindings="category"}}<img {{bind-attr src='thumbnail'}}/><h2>{{id}}.</h2>{{/link-to}}</li>
+              <li>{{#link-to 'photo' this class='box' tagName='div' classNameBindings="category"}}<img {{bind-attr src='thumbnail'}}/><h3>{{title}}</h3><h2>{{id}}.</h2>{{/link-to}}</li>
             {{/each}}
           </ul>
     </script>
@@ -109,7 +110,7 @@
       </div>
           <ul class="row-fluid block-grid-3 box-container center-block">
             {{#each}}
-              <li>{{#link-to 'design' this class='box' tagName='div' classNameBindings="category"}}<img {{bind-attr src='thumbnail'}}/><h2>{{id}}.</h2>{{/link-to}}</li>
+              <li>{{#link-to 'design' this class='box' tagName='div' classNameBindings="category"}}<img {{bind-attr src='thumbnail'}}/><h3>{{title}}</h3><h2>{{id}}.</h2>{{/link-to}}</li>
             {{/each}}
           </ul>
     </script>
@@ -128,7 +129,7 @@
     <script type="text/x-handlebars" data-template-name="about">
       {{#my-modal ok='logout' close='removeModal'}}
         {{#link-to 'index'}}<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>{{/link-to}}
-        <h1>ABOUT ME</h1>
+        {{view App.PDFView}}
       {{/my-modal}}
     </script>
 
