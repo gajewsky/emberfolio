@@ -77,7 +77,7 @@ App.ArtsView = Ember.View.extend({
     this._super();
     Ember.run.scheduleOnce('afterRender', this, function(){
     	$(".box").hover(function () {
-				$(this).find('img,h2, h3').fadeToggle(200,"easeOutSine");
+				$(this).find('img').toggleClass('hover');
 			});
 
 			$('.box-container').isotope({
@@ -105,7 +105,7 @@ App.PhotosView = Ember.View.extend({
 		this._super();
 		Ember.run.scheduleOnce('afterRender', this, function(){
 			$(".box").hover(function () {
-				$(this).find('img,h2, h3').fadeToggle(200,"easeOutSine");
+				$(this).find('img').toggleClass('hover');
 			});
 
 			$('.box-container').isotope({
@@ -139,7 +139,7 @@ App.DesignsView = Ember.View.extend({
 		this._super();
 		Ember.run.scheduleOnce('afterRender', this, function(){
 			$(".box").hover(function () {
-				$(this).find('img,h2, h3').fadeToggle(200,"easeOutSine");
+				$(this).find('img').toggleClass('hover');
 			});
 
 			$('.box-container').isotope({

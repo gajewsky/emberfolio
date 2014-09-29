@@ -58,7 +58,7 @@
       <div class="filters col-md-8 center-block"></div>
         <ul class="row-fluid block-grid-3 box-container center-block">
           {{#each}}
-            <li>{{#link-to 'art' this class='box' tagName='div'}}<img  {{bind-attr src='thumbnail'}} /><h3>{{title}}</h3><h2>{{id}}.</h2>{{/link-to}}</li>
+            <li>{{#link-to 'art' this class='box' tagName='div'}}<img  {{bind-attr src='thumbnail'}} /><h2>{{id}}.</h2>{{/link-to}}</li>
 
           {{/each}}
         </ul>
@@ -68,24 +68,42 @@
 
       {{#my-modal ok='logout' close='removeModal'}}
         {{#link-to 'arts'}}<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>{{/link-to}}
-        <h2>{{title}}</h2>
-        <img {{bind-attr src='thumbnail'}} />
-        <img {{bind-attr src='photo'}} />
-        <p>{{description}}</p>
-
-        <img {{bind-attr src='photo'}} />
+          <h2>{{title}}</h2>
+          <p>{{description}}</p>
+          <img {{bind-attr src='photo1'}} />
+          <p>{{caption1}}</p>
+          <img {{bind-attr src='photo2'}} />
+          <p>{{caption2}}</p>
+          <img {{bind-attr src='photo3'}} />
+          <p>{{caption3}}</p>
+          <img {{bind-attr src='photo4'}} />
+          <p>{{caption4}}</p>
+          <img {{bind-attr src='photo5'}} />
+          <p>{{caption5}}</p>
+          <img {{bind-attr src='photo6'}} />
+          <p>{{caption6}}</p>
+          <img {{bind-attr src='photo7'}} />
+          <p>{{caption7}}</p>
+          <img {{bind-attr src='photo8'}} />
+          <p>{{caption8}}</p>
+          <img {{bind-attr src='photo9'}} />
+          <p>{{caption9}}</p>
+          <img {{bind-attr src='photo10'}} />
+          <p>{{caption10}}</p>
+          <img {{bind-attr src='photo11'}} />
+          <p>{{caption11}}</p>
       {{/my-modal}}
     </script>
 
     <script type="text/x-handlebars" data-template-name="photos">
       <div class="filters col-md-8 center-block">
         <button class="active "data-filter="*">ALL</button><b>+</b>
-        <button data-filter=".portrait">PORTRAIT</button><b>+</b>
-        <button data-filter=".wedding">WEDDING</button>
+        <button data-filter=".wedding">WEDDING</button><b>+</b>
+        <button data-filter=".portrait">PORTRAIT</button>
       </div>
           <ul class="row-fluid block-grid-3 box-container center-block">
             {{#each}}
-              <li>{{#link-to 'photo' this class='box' tagName='div' classNameBindings="category"}}<img {{bind-attr src='thumbnail'}}/><h3>{{title}}</h3><h2>{{id}}.</h2>{{/link-to}}</li>
+              <li>{{#link-to 'photo' this class='box' tagName='div' classNameBindings="category"}}<img {{bind-attr src='thumbnail'}}/><h2>{{id}}.</h2>{{/link-to}}</li>
             {{/each}}
           </ul>
     </script>
@@ -93,11 +111,35 @@
     <script type="text/x-handlebars" data-template-name="photo">
         {{#my-modal ok='logout' close='removeModal'}}
           {{#link-to 'photos'}}<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>{{/link-to}}
-          <h2>{{title}}</h2>
-          <img {{bind-attr src='thumbnail'}} />
-          <img {{bind-attr src='photo'}} />
-          <p>{{description}}</p>
-          <img {{bind-attr src='photo'}} />
+            <h2>{{title}}</h2>
+            <p>{{description}}</p>
+            <img {{bind-attr src='photo1'}} />
+            <p>{{caption1}}</p>
+            <img {{bind-attr src='photo2'}} />
+            <p>{{caption2}}</p>
+            <img {{bind-attr src='photo3'}} />
+            <p>{{caption3}}</p>
+            <img {{bind-attr src='photo4'}} />
+            <p>{{caption4}}</p>
+            <img {{bind-attr src='photo5'}} />
+            <p>{{caption5}}</p>
+            <img {{bind-attr src='photo6'}} />
+            <p>{{caption6}}</p>
+            <img {{bind-attr src='photo7'}} />
+            <p>{{caption7}}</p>
+            <img {{bind-attr src='photo8'}} />
+            <p>{{caption8}}</p>
+            <img {{bind-attr src='photo9'}} />
+            <p>{{caption9}}</p>
+            <img {{bind-attr src='photo10'}} />
+            <p>{{caption10}}</p>
+            <img {{bind-attr src='photo11'}} />
+            <p>{{captio11}}</p>
+            <img {{bind-attr src='photo12'}} />
+            <p>{{captio12}}</p>
+            <img {{bind-attr src='photo13'}} />
+            <p>{{captio13}}</p>
+
         {{/my-modal}}
     </script>
 
@@ -110,7 +152,7 @@
       </div>
           <ul class="row-fluid block-grid-3 box-container center-block">
             {{#each}}
-              <li>{{#link-to 'design' this class='box' tagName='div' classNameBindings="category"}}<img {{bind-attr src='thumbnail'}}/><h3>{{title}}</h3><h2>{{id}}.</h2>{{/link-to}}</li>
+              <li>{{#link-to 'design' this class='box' tagName='div' classNameBindings="category"}}<img {{bind-attr src='thumbnail'}}/><h2>{{id}}.</h2>{{/link-to}}</li>
             {{/each}}
           </ul>
     </script>
@@ -119,17 +161,76 @@
         {{#my-modal ok='logout' close='removeModal'}}
           {{#link-to 'designs'}}<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>{{/link-to}}
           <h2>{{title}}</h2>
-          <img {{bind-attr src='thumbnail'}} />
-          <img {{bind-attr src='photo'}} />
           <p>{{description}}</p>
-          <img {{bind-attr src='photo'}} />
+          <img {{bind-attr src='photo1'}} />
+          <p>{{caption1}}</p>
+          <img {{bind-attr src='photo2'}} />
+          <p>{{caption2}}</p>
+          <img {{bind-attr src='photo3'}} />
+          <p>{{caption3}}</p>
+          <img {{bind-attr src='photo4'}} />
+          <p>{{caption4}}</p>
+          <img {{bind-attr src='photo5'}} />
+          <p>{{caption5}}</p>
+          <img {{bind-attr src='photo6'}} />
+          <p>{{caption6}}</p>
+          <img {{bind-attr src='photo7'}} />
+          <p>{{caption7}}</p>
         {{/my-modal}}
     </script>
 
     <script type="text/x-handlebars" data-template-name="about">
       {{#my-modal ok='logout' close='removeModal'}}
         {{#link-to 'index'}}<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>{{/link-to}}
-        {{view App.PDFView}}
+        <div id="about">
+
+
+          <p> Hi, my name is Klaudia. I have a bachelor’s degree in
+              painting, specialized in graphic design; interested in
+              photography, illustration, graphic design (branding,
+              web design, typography). I'm more an artist than designer,
+              but my creation is a constant battle of these two aspects.
+              I find art in technical activity and logic in fine arts.
+          </p>
+
+
+            <figure>
+              <img src="images/avatar.png">
+              <figcaption>
+                <ul>
+                  <li><a href="#"><img src="images/1.png"></a></li>
+                  <li><a href="#"><img src="images/@.png"></a></li>
+                  <li><a href="#"><img src="images/3.png"></a></li>
+                </ul>
+              </figcaption>
+            </figure>
+
+
+        <h2>AVAILABLE FOR:</h2>
+        <h4>Freelancing  job as a</h4>
+         <ul>
+           <li>UI/UX designer - websites and applications (I cooperate with web developers)</li>
+           <li>photographer - wedding, portrait and advertising</li>
+           <li>illustrator - script, commercial and marchandise illustrations</li>
+           <li>graphic designer -  branding, commercial art</li>
+         </ul>
+
+
+        <h2>SKILLS AND EXPERIENCE:</h2>
+        <ul>
+          <li>Photoshop.......3/3</li>
+          <li>Lightroom.......3/3</li>
+          <li>Corel Draw.......1/3</li>
+          <li>Illustrator.......2/3</li>
+          <li>Antetype.......2/3</li>
+          <li>UXPin.......3/3</li>
+          <li>Balsamiq.......3/3</li>
+          <li>InDesign.......2/3</li>
+          <li>After Effects.......1/3</li>
+          <li>HTML/CSS.......1/3</li>
+          <li>Drawing.......3/3</li>
+        </ul>
+        </div>
       {{/my-modal}}
     </script>
 
