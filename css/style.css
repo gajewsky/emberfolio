@@ -2,6 +2,7 @@
   font-family: 'portmanteau';
   src: url('fonts/Portmanteau-Regular.eot?#iefix') format('embedded-opentype'), url('fonts/Portmanteau-Regular.woff') format('woff'), url('fonts/Portmanteau-Regular.ttf') format('truetype'), url('fonts/Portmanteau-Regular.svg#svgFontName') format('svg');
 }
+@import url(http://fonts.googleapis.com/css?family=Roboto);
 body {
   background: url("../images/bg.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -9,7 +10,7 @@ body {
   -o-background-size: cover;
   background-size: cover;
   color: #a6a4a1;
-  font-family: 'portmanteau', serif;
+  font-family: 'roboto';
 }
 /*NAVIGATION*/
 
@@ -135,7 +136,11 @@ ul.block-grid-3 > li:nth-of-type(5n) {
   font-size:1em;
   }
 #about figure{margin-bottom:50px;}
-#about h2{font-size:1.5em;}
+#about h2{
+  font-size:1.5em;
+  text-align:left;
+  margin-bottom:40px;
+  }
 #about figure ul{margin:30px 0px;}
 #about figure ul li{
   display:inline;
@@ -148,8 +153,9 @@ ul.block-grid-3 > li:nth-of-type(5n) {
   margin: 0;
 }
 .modal-content {
-  background: #0d0d0d;
-  opacity: 0.9;
+  background: url(../images/bg-modal.jpg);
+  background-attachment: fixed;
+  opacity: 1;
   min-height: 100%;
 }
 .modal-body {
@@ -160,6 +166,7 @@ ul.block-grid-3 > li:nth-of-type(5n) {
   text-align:left;
 }
 .modal-body h2 {
+  font-family: 'portmanteau';
   color: #3b2e18;
   margin: 30px;
   text-align: center;
@@ -168,6 +175,9 @@ ul.block-grid-3 > li:nth-of-type(5n) {
 .modal-body p {
   margin: 50px 30px;
   font-size: 1.2em;
+}
+.modal-body img{
+  margin:0 auto;
 }
 .modal-body .close {
   font-size: 5em;
