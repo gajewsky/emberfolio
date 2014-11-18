@@ -67,7 +67,7 @@
     <script type="text/x-handlebars" data-template-name="art">
 
       {{#my-modal ok='logout' close='removeModal'}}
-        {{#link-to 'arts'}}<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>{{/link-to}}
+        {{#link-to 'arts'}}<div class="cross"><a class="close" data-dismiss="modal" aria-hidden="true">&times;</a></div>{{/link-to}}
           <h2>{{title}}</h2>
           <p>{{description}}</p>
           <img {{bind-attr src='photo1'}} />
@@ -110,7 +110,7 @@
 
     <script type="text/x-handlebars" data-template-name="photo">
         {{#my-modal ok='logout' close='removeModal'}}
-          {{#link-to 'photos'}}<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>{{/link-to}}
+          {{#link-to 'photos'}}<div class="cross"><a class="close" data-dismiss="modal" aria-hidden="true">&times;</a></div>{{/link-to}}
             <h2>{{title}}</h2>
             <p>{{description}}</p>
             <img {{bind-attr src='photo1'}} />
@@ -159,7 +159,7 @@
 
     <script type="text/x-handlebars" data-template-name="design">
         {{#my-modal ok='logout' close='removeModal'}}
-          {{#link-to 'designs'}}<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>{{/link-to}}
+          {{#link-to 'designs'}}<div class="cross"><a class="close" data-dismiss="modal" aria-hidden="true">&times;</a></div>{{/link-to}}
           <h2>{{title}}</h2>
           <p>{{description}}</p>
           <img {{bind-attr src='photo1'}} />
@@ -181,7 +181,7 @@
 
     <script type="text/x-handlebars" data-template-name="about">
       {{#my-modal ok='logout' close='removeModal'}}
-        {{#link-to 'index'}}<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>{{/link-to}}
+        {{#link-to 'index'}}<div class="cross"><a class="close" data-dismiss="modal" aria-hidden="true">&times;</a></div>{{/link-to}}
         <div id="about">
 
 

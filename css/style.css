@@ -153,10 +153,21 @@ ul.block-grid-3 > li:nth-of-type(5n) {
   margin: 0;
 }
 .modal-content {
+
+  background: none;
+  opacity: 1;
+  min-height: 50%;
+  min-width: 50%;
+
+}
+.modal-backdrop.in {
   background: url(../images/bg-modal.jpg);
   background-attachment: fixed;
-  opacity: 1;
-  min-height: 100%;
+  opacity:1;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 .modal-body {
   width: 780px;
@@ -182,4 +193,9 @@ ul.block-grid-3 > li:nth-of-type(5n) {
 .modal-body .close {
   font-size: 5em;
   color: #a6a4a1;
+  position:fixed;
+  top:5%;
+  right:20%;
+  text-shadow: none;
+  opacity: 1;
 }
